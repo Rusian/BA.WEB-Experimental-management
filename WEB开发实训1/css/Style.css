@@ -1,0 +1,167 @@
+﻿body {
+    font-family: Arial;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+dl {
+    width: 180px;
+}
+
+dl, dd, dt {
+    margin: 0;
+}
+
+dt {
+    background-color: #89c3eb;
+    background-position: 5px 13px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 5px 5px 20px;
+    margin: 2px;
+    height: 29px;
+    line-height: 28px;
+}
+
+    dt a {
+    color: #000;
+    text-decoration: none;
+    font-family: 黑体;
+}
+
+dd a {
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    padding: 5px 5px 5px 20px;
+    margin: 0;
+}
+
+li {
+    line-height: 24px;
+}
+
+.bg {
+    background-position: 5px -16px;
+}
+
+div {
+    border-radius: 0px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#header {
+    width: 960px;
+    height: 190px;
+    margin: 0 auto;
+}
+
+#main {
+    width: 960px;
+    margin: 10px auto;
+    height: auto;
+}
+
+ .left {
+    margin-top: 0px;
+    width: 18%;
+    float: left;
+    border-bottom-color: #6192D5;
+}
+.right {
+        
+        width: 80%;
+        float: right;
+}
+
+.claearfloat {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+
+#footer {
+    width: 960px;
+    height: 192px;
+    margin: 200px auto 10px auto;
+}
+
+
+
+.welcome {
+    margin-top: 0px;
+    background-image: url('../images/welcome_bg2.png');
+    background-repeat: no-repeat;
+    font-size: medium;
+    font-family: 楷体;
+    text-align: right;
+    width: 100%;
+    height: 25px;
+}
+
+.content_body {
+    margin-top: 0px;
+    width: 770px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+    overflow: auto;
+    
+}
+
+    .content_body#gradeview {
+        background-image:url(../images/repeat-bg1.gif);
+        background-repeat:repeat;
+    }
+
+    .content_body#labreserve {
+        
+    }
+
+.menu_body {
+    margin-top: 0px;
+    margin-left: 30px;
+    width: 900px;
+    height: auto;
+    font-size: 15px;
+}
+
+
+
+.content {
+    margin: 0px auto;
+    width: 800px;
+    text-align: center;
+}
+
+    .content a {
+        color: #FFF;
+    }
+
+#about {
+    background-color: #6192d5;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    height: 14px;
+    border-top: 3px solid #bae3fb;
+    text-align: left;
+    color: #FFF;
+}
+
+
+#copyright {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    margin: 0px auto;
+    width: 960px;
+    line-height: 100%;
+    padding-top: 15px;
+    text-align: center;
+}

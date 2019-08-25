@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+    <siteMapNode url="login.aspx" title="首页"  description="">
+      <siteMapNode url="~/Bottom_Menu/LabView.aspx" title="实验室一览"  description="">
+       
+      </siteMapNode>
+      <siteMapNode url="" title="服务指南"  description="">
+        <siteMapNode url="~/Bottom_Menu/LaboratoryManageGuide.aspx" title="实验室管理指南"  description="" />
+        <siteMapNode url="~/Bottom_Menu/DeviceGuide.aspx" title="设备使用指南"  description="" />
+        <siteMapNode url="~/Bottom_Menu/WorkerView.aspx" title="工作人员一览"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+  
+</siteMap>

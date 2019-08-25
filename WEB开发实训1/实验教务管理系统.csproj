@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{10CBE465-B09C-4E4A-9A4B-E899E63B1C4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>实验教务管理系统</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="demo\css3_menu_demo\fonts\iconic\iconic_stroke.eot" />
+    <None Include="demo\css3_menu_demo\fonts\iconic\iconic_stroke.otf" />
+    <None Include="demo\css3_menu_demo\fonts\iconic\iconic_stroke.ttf" />
+    <None Include="Web.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.sitemap" />
+    <None Include="母版\MasterPage_Administrator.master">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="母版\MasterPage_Bottom_Menu.master" />
+    <None Include="母版\MasterPage_Student.master" />
+    <None Include="母版\MasterPage_Teacher.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\AdministratorDefault.aspx" />
+    <Content Include="Administrator\A_DeviceRegulate.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Administrator\A_LabReservationApprove.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Administrator\A_PasswordChange.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Bottom_Menu\DeviceGuide.aspx" />
+    <Content Include="Bottom_Menu\LaboratoryManageGuide.aspx" />
+    <Content Include="Bottom_Menu\LabView.aspx" />
+    <Content Include="Bottom_Menu\WorkerView.aspx" />
+    <Content Include="css\iconic.css" />
+    <Content Include="css\MenuStyle.css" />
+    <Content Include="css\Style.css" />
+    <Content Include="css\style_login.css" />
+    <Content Include="demo\css3_menu_demo\fonts\iconic\iconic_stroke.svg" />
+    <Content Include="demo\css3_menu_demo\iconic.css" />
+    <Content Include="demo\css3_menu_demo\img\denim.png" />
+    <Content Include="demo\css3_menu_demo\img\light_alu.png" />
+    <Content Include="demo\css3_menu_demo\index.html" />
+    <Content Include="demo\css3_menu_demo\prefix-free.js" />
+    <Content Include="demo\css3_menu_demo\style.css" />
+    <Content Include="images\Answer.jpg" />
+    <Content Include="images\bg1.png" />
+    <Content Include="images\bg2.jpg" />
+    <Content Include="images\bg3.jpg" />
+    <Content Include="images\BOOK.jpg" />
+    <Content Include="images\grade-bg.jpg" />
+    <Content Include="images\grade.jpg" />
+    <Content Include="images\Grade1.jpg" />
+    <Content Include="images\huax.jpg" />
+    <Content Include="images\labreservebg.jpg" />
+    <Content Include="images\Login\Login_bg1.jpg" />
+    <Content Include="images\Login\Login_bg2.jpg" />
+    <Content Include="images\login_bg1.jpg" />
+    <Content Include="images\Login_bg2.jpg" />
+    <Content Include="images\logo-a.png" />
+    <Content Include="images\logo-s.png" />
+    <Content Include="images\logo-t.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_login.png" />
+    <Content Include="images\Pswpage.jpg" />
+    <Content Include="images\question-bg.jpg" />
+    <Content Include="images\repeat-bg1.gif" />
+    <Content Include="images\select.png" />
+    <Content Include="images\ts1.jpg" />
+    <Content Include="images\ts2.jpg" />
+    <Content Include="images\ts3.jpg" />
+    <Content Include="images\upfeathers.png" />
+    <Content Include="images\welcome_bg.png" />
+    <Content Include="images\welcome_bg2.png" />
+    <Content Include="images\日历.jpg" />
+    <Content Include="js\jquery-1.4.1.js" />
+    <Content Include="js\jquery-1.6.2.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\prefix-free.js" />
+    <Content Include="Login\login.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Student\StudentDefault.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Student\S_ClassView.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Student\S_GradeView.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Student\S_LabReport.aspx" />
+    <Content Include="Student\S_PasswordChange.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Student\S_QuestionRaise.aspx" />
+    <Content Include="Teacher\Libgrade.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Teacher\TeacherDefault.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Teacher\T_ClassView.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Teacher\T_GradeUpload.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Teacher\T_LabReserve.aspx" />
+    <Content Include="Teacher\T_PasswordChange.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Teacher\T_QuestionReply.aspx" />
+    <Content Include="Teacher\T_ReportCorrect.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\AdministratorDefault.aspx.cs">
+      <DependentUpon>AdministratorDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\A_DeviceRegulate.aspx.cs">
+      <DependentUpon>A_DeviceRegulate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\A_LabReservationApprove.aspx.cs">
+      <DependentUpon>A_LabReservationApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\A_PasswordChange.aspx.cs">
+      <DependentUpon>A_PasswordChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bottom_Menu\DeviceGuide.aspx.cs">
+      <DependentUpon>DeviceGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bottom_Menu\LaboratoryManageGuide.aspx.cs">
+      <DependentUpon>LaboratoryManageGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bottom_Menu\LabView.aspx.cs">
+      <DependentUpon>LabView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bottom_Menu\WorkerView.aspx.cs">
+      <DependentUpon>WorkerView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentDefault.aspx.cs">
+      <DependentUpon>StudentDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\S_ClassView.aspx.cs">
+      <DependentUpon>S_ClassView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\S_GradeView.aspx.cs">
+      <DependentUpon>S_GradeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\S_LabReport.aspx.cs">
+      <DependentUpon>S_LabReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\S_PasswordChange.aspx.cs">
+      <DependentUpon>S_PasswordChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\S_QuestionRaise.aspx.cs">
+      <DependentUpon>S_QuestionRaise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\Libgrade.aspx.cs">
+      <DependentUpon>Libgrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\TeacherDefault.aspx.cs">
+      <DependentUpon>TeacherDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\T_ClassView.aspx.cs">
+      <DependentUpon>T_ClassView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\T_GradeUpload.aspx.cs">
+      <DependentUpon>T_GradeUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\T_LabReserve.aspx.cs">
+      <DependentUpon>T_LabReserve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\T_PasswordChange.aspx.cs">
+      <DependentUpon>T_PasswordChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\T_QuestionReply.aspx.cs">
+      <DependentUpon>T_QuestionReply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\T_ReportCorrect.aspx.cs">
+      <DependentUpon>T_ReportCorrect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="母版\MasterPage_Administrator.master.cs">
+      <DependentUpon>MasterPage_Administrator.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="母版\MasterPage_Bottom_Menu.master.cs">
+      <DependentUpon>MasterPage_Bottom_Menu.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="母版\MasterPage_Student.master.cs">
+      <DependentUpon>MasterPage_Student.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="母版\MasterPage_Teacher.master.cs">
+      <DependentUpon>MasterPage_Teacher.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

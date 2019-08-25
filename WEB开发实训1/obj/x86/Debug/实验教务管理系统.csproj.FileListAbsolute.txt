@@ -1,0 +1,2 @@
+D:\R.Study.UnderGraduate\WEB实训——实验管理\实验教务管理系统\WEB开发实训1\obj\x86\Debug\实验教务管理系统.csprojResolveAssemblyReference.cache
+D:\R.Study.UnderGraduate\WEB实训——实验管理\实验教务管理系统\WEB开发实训1\bin\Debug\WindowsApplication.exe.config

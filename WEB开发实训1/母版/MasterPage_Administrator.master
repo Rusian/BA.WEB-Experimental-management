@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage_Administrator.master.cs" Inherits="母版_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+<link rel="stylesheet" href="../css/Style.css" type="text/css"/>
+<link rel="stylesheet" href="../css/MenuStyle.css" type="text/css"/>
+<link href="iconic.css" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script src="../js/prefix-free.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("dd").hide();
+        $("dt a").click(function () {
+            $(this).parent().toggleClass("bg");
+            $(this).parent().prevAll("dt").removeClass("bg")
+            $(this).parent().nextAll("dt").removeClass("bg")
+            $(this).parent().next().slideToggle();
+            $(this).parent().prevAll("dd").slideUp("slow");
+            $(this).parent().next().nextAll("dd").slideUp("slow");
+            return false;
+        });
+
+
+    });
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+        <div id="header">
+            <img src="../images/logo-a.png" style="height:100%; width:100%;"/>
+        </div>
+        <div id="main">
+            <div class="right">
+
+                <div class="welcome">
+                    <asp:Label ID="Label1" runat="server" Text="欢迎你！"></asp:Label>
+                    <asp:Label ID="user_name" runat="server" Text="xxx"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="管理员"></asp:Label> 
+                </div>
+
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="left">
+            <dl>
+                <dt><a href="#">实验管理</a></dt>
+                <dd>
+                <ul>
+                     <li><a href="A_LabReservationApprove.aspx">审批预约</a></li>
+                     
+                </ul>
+                </dd>
+                <dt><a href="#">设备管理</a></dt>
+                <dd>
+                    <ul>
+                        <li><a href="A_DeviceRegulate.aspx">设备信息</a></li>
+                       
+                        
+                    </ul>
+                </dd>
+ <dt><a href="#">个人管理</a></dt>
+                  <dd>
+                      <ul>
+                         <li><a href="A_PasswordChange.aspx">修改密码</a></li>
+                      </ul>
+                  </dd>
+            </dl>
+            </div>
+            <div class="claearfloat">
+            </div>
+        </div>
+        <div id="footer">
+            <nav class="bottom_menu">
+                <ul class="menu">
+                    <li><a href="../Login/login.aspx"> 首页</a></li>
+
+                    <li><a href="../Bottom_Menu/LabView.aspx"> 实验室一览</a></li>
+
+			        <li><a href="#">服务指南</a>
+				        <ul class="submenu" id="service_guide">
+					        <li><a href="../Bottom_Menu/LaboratoryManageGuide.aspx">实验室管理指南</a></li>
+					        <li><a href="../Bottom_Menu/DeviceGuide.aspx">设备使用指南</a></li>
+					        <li><a href="../Bottom_Menu/WorkerView.aspx">工作人员一览</a></li>
+				        </ul>
+			        </li>
+
+			        <li><a href="#"> 友情链接</a>
+				        <ul class="submenu" id="useful_link">
+					        <li><a href="http://www.czu.cn/">常州工学院</a></li>
+                            <li><a href="http://www.moe.edu.cn/">国家教育部</a></li>
+					        <li><a href="http://www.most.gov.cn/">国家科技部</a></li>
+					        <li><a href="#">科研处</a></li>
+				        </ul>
+			        </li>
+			        <li><a href="#"> 联系我们</a></li>
+		     </ul>
+             <div class="clearfix"></div>
+             </nav>
+            <div id="copyright">
+                <br/>通讯地址：江苏省常州市新北区辽河路666号    邮编：213032    联系电话：0519-85210976 
+                <br/>
+                <br/>版权声明：实验教务管理中心所有
+
+            </div>
+        </div>
+</form>
+</body>
+</html>
